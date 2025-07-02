@@ -1,8 +1,16 @@
 .main {
-    width: 70%;
+    width: 90%;
 }
 
 .header {
-    background-color: #ec1d24;
+    background-color: #690e11;
 }
 
+.body {
+    background-image: url(image/mstiteli-the-avengers-avengers-komiks-marvel-logo-logotip-gr.jpg);
+    background-size: cover;
+}
+
+.footer {
+    background-color: #690e11;
+}

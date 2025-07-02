@@ -15,7 +15,7 @@ fetch('Heros.json')
             document.getElementById("conteneur").innerHTML += `
 
             <div class="card p-0 my-4" style="width: 18rem;">
-                <img src="${Heros.image}" class="card-img-top" alt="...">
+                <img src="${Heros.image}" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">${Heros.name}</h5>
                     <p class="card-text"><span class="fw-bold">Vrai nom : </span>${Heros.realName}</p>
