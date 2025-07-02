@@ -3,7 +3,17 @@ fetch('Heros.json')
     .then(data => {
         console.log(data)
         data.forEach(Heros => {
-            document.getElementById("conteneur").innerHTML += `            
+
+            function createli(powers) {
+                let lilist = ""
+                powers.forEach(power => {
+                    lilist += `<li class="list-group-item"><span class="fw-bold">Pouvoir : </span>${Heros.powers}</li>`
+                })
+                return lilist
+            }
+
+            document.getElementById("conteneur").innerHTML += `
+
             <div class="card p-0 my-4" style="width: 18rem;">
                 <img src="${Heros.image}" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -11,9 +21,7 @@ fetch('Heros.json')
                     <p class="card-text"><span class="fw-bold">Vrai nom : </span>${Heros.realName}</p>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><span class="fw-bold">Pouvoir : </span>${Heros.powers[0]}</li>
-                    <li class="list-group-item"><span class="fw-bold">Pouvoir : </span>${Heros.powers[1]}</li>
-                    <li class="list-group-item"><span class="fw-bold">Pouvoir : </span>${Heros.powers[2]}</li>
+                ${createli(Heros.powers)}
                 </ul>
                 <div class="card-body">
                     <p class=""><span class="fw-bold">Ville : </span>${Heros.city}</p>
