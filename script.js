@@ -9,10 +9,6 @@ fetch('Heros.json')
 // document.getElementById('city').innerHTML =
 // document.getElementById('firtApparence').innerHTML =
 
-fetch('Heros.json')
-    .then(response => response.json())
-    .then(data => console.log(data[2].name))
-
-fetch('Heros.json')
-    .then(response => response.json())
-    .then(data => console.log(data[2]["name"]))
+// fetch('Heros.json')
+//     .then(response => response.json())
+//     .then(data => console.log(data[2].name))
