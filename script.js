@@ -4,10 +4,10 @@ fetch('Heros.json')
         console.log(data)
         data.forEach(Heros => {
 
-            function createli(powers) {
+            function createli(pow) {
                 let lilist = ""
-                powers.forEach(power => {
-                    lilist += `<li class="list-group-item"><span class="fw-bold">Pouvoir : </span>${Heros.powers}</li>`
+                pow.forEach(power => {
+                    lilist += `<li class="list-group-item"><span class="fw-bold">Pouvoir : </span>${power}</li>`
                 })
                 return lilist
             }
